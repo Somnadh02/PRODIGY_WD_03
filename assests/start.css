@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?sunset,landscape') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d1 {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+}
+
+.d1 h1 {
+    margin: 0;
+    font-size: 4em;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 10px #fff, 0 0 5px #ff0000, 0 0 20px #ff6200, 0 0 30px #ff0000;
+}
+
+.d1 button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.d1 button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.d1 button:hover {
+    background-color: #444;
+}
+
+.d1 button:active {
+    background-color: #555;
+}

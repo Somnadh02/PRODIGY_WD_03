@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eee url('https://source.unsplash.com/1600x900/?nature') no-repeat
+      center center/cover;
+  }
+  
+  .container {
+    max-width: 300px;
+    margin: 150px auto;
+    text-align: center;
+    padding: 20px;
+    background:transparent;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-top: 0;
+    color:white;
+    text-shadow: 0 0 10px #fffF00, 0 0 5px #ff0000, 0 0 20px #ff6200, 0 0 30px #ff0000;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    background-color: #fff;
+    opacity: 80%;
+    border: 1px solid #ddd;
+    padding: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    animation: glow-animation 1s infinite alternate;
+  }
+  @keyframes glow-animation {
+    0%{text-shadow: 0 0 10px #0077ff, 0 0 5px #eb1313, 0 0 20px #fcfcfc, 0 0 30px #ff0000;
+    }
+  }
+  .cell:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .cell.x {
+    background-color: #ff69b4;
+    color: #fff;
+  }
+  
+  .cell.o {
+    background-color: #33cc33;
+    color: #fff;
+  }
+  
+  #status {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px #fffF00, 0 0 5px #ff0000, 0 0 20px #ff6200, 0 0 30px #ff0000;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  button:active {
+    background-color: #555;
+  }
+  
+  @media (min-width: 480px) {
+  .container {
+      max-width: 480px;
+    }
+  }
+#mode-selection {
+    margin-top: 20px;
+}
+
+#mode {
+    margin-left: 10px;
+}
+#notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
